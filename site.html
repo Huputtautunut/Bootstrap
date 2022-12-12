@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Tehtävä 17</title>
+</head>
+
+<body>
+
+    <!--LOHKO1 TAI 17A-->
+
+    <!--Ikkunaa pienentäessä teksti häviää-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#"><img src="Savonia.png" alt="Trulli"></a>
+
+        <!--User input-->
+        <form class="form-inline">
+            <input type="tunnus" class="form-control" id="tunnus" placeholder="Tunnus" name="tunnus">
+
+            <input type="Salasana" class="form-control" id="pwd" placeholder="Salasana" name="pswd">
+            <button type="Tarkista" class="btn">Kirjaudu</button>
+        </form>
+
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                    class="fas fa-bars fa-1x"></i></span></button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+            <!-- Links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Alkuun</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Wilma</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reppu</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Työkalut</a>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--LOHKO2 TAI 17B-->
+
+    <div class="navbar container-fluid">
+        <!--Opiskelijanumero ja aloitusvuosi-->
+        <form>
+            <div class="row">
+                <div class="col col-md-4">
+                    <div class="form-group">
+                        <label for="numero">Opiskelijanumero</label>
+                        <input type="numero" class="form-control" placeholder="Opiskelijanumero" id="numero">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Aloitusvuosi</label>
+                        <input type="Aloitusvuosi" class="form-control" placeholder="Aloitusvuosi" id="pwd">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Muista minut
+                        </label>
+                    </div>
+                    <div>
+                    <button type="Tarkista" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tarkista</button>
+                    </div>
+
+                    <div>
+                    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Tietojen tarkistus</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="false">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                Tarkistatko ovatko ao. tiedot oikein
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Tallenna tiedot</button>
+                              <button type="button" class="btn btn-secondary">Sulje</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        </form>
+
+    </div>
+
+        <!--LOHKO3 tai 17C-->
+    
+    <div class="row">
+        <div class="col col-md-8">
+            <table class="table">
+
+                <tbody>
+                    <thead>
+                        <th scope="row">Opintojakso</th>
+                        <th scope="row">Suorituspvm</th>
+                        <th scope="row">Arvosana</th>
+                    </thead>
+
+                    <tr>
+                        <td>Ohjelmoinnin perusteet</td>
+                        <td>3.4.2016</td>
+                        <td>2/5</td>
+
+
+
+                    </tr>
+
+                    <tr>
+                        <td>Tietorakenteet ja algoritmit</td>
+                        <td>16.3.2016</td>
+                        <td>5/5</td>
+
+                    </tr>
+                    <tr>
+                        <td>Matematiikka I</td>
+                        <td>28.1.2015</td>
+                        <td>4/5</td>
+
+
+                    </tr>
+                    <tr>
+
+                        <td>Matematiikka II</td>
+                        <td>28.11.2014</td>
+                        <td>3/5</td>
+                    </tr>
+                    <tr>
+                        <td>Fysiikka I</td>
+                        <td>11.9.2015</td>
+
+
+
+                        <td>4/5</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+    </div>
+    </div>
+
+    <!--LOHKO4 TAI 17D-->
+    <div class="navbar container-fluid">
+        <div class="row">
+          <div class="col-md">
+           <a>@ 2017-2018</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md">
+            Toimipaikat
+            <a>Opistotie<br></a>
+            <a>Technopolis<br></a>
+            <a>Iisalmi<br></a>
+            <a>Varkaus<br></a>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md">
+                Tietoja
+            <a>Yhteystiedot<br></a>
+            <a>GRPD<br></a>
+            <a>Ota yhteyttä<br></a>
+            
+
+            </div>
+          </div>
+      </div>
+     
+     
+
+
+
+
+
+</body>
+
+</html>
