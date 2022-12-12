@@ -1,2 +1,2 @@
 # Bootstrap
-A simple website made with using bootstrap
+A simple proto-website made with using bootstrap
